@@ -3,17 +3,17 @@ function Car(make, model) {
 	this.car = make;
 	this.model =  model;
 
-	getMakeModel(){
-		console.log(make + " " + model); 
-	}
+	Car.prototype.getMakeModel = function() {
+    console.log(this.make + " " + this.model);
+  };
 }
 
 function SportsCar(make, model, topSpeed) {
-	super(make,model);
+	Car.call(this,make,model);
 	this.topSpeed = topSpeed;
 
-	getTopSpeed(){
-		console.log(topSpeed);
+		SportsCar.prototype.getTopSpeed(){
+		console.log(this.topSpeed);
 	}
 }
 
