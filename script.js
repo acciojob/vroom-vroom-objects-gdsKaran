@@ -12,7 +12,7 @@ function SportsCar(make, model, topSpeed) {
 	Car.call(this,make,model);
 	this.topSpeed = topSpeed;
 
-		SportsCar.prototype.getTopSpeed(){
+		SportsCar.prototype.getTopSpeed= function(){
 		console.log(this.topSpeed);
 	}
 }
