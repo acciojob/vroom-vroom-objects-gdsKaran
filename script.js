@@ -1,6 +1,6 @@
 // Complete the js code
 function Car(make, model) {
-	this.car = make;
+	this.make = make;
 	this.model =  model;
 
 	Car.prototype.getMakeModel = function() {
